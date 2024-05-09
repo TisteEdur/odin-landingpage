@@ -13,6 +13,16 @@ footer{
     width: 100%;
 }
 
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span {
+    font-family: 'Roboto', serif;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -22,7 +32,7 @@ footer{
 header, 
 main,
 footer {
-    padding: 0 200px;
+    padding: 0 400px;
 }
 
 .header {
@@ -31,7 +41,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 100px;
     background-color: #1f2937;
 
     & .header-content {
@@ -41,7 +50,6 @@ footer {
 
         & .logo {
             flex: 0 0 140px;
-            font-family: 'Roboto', serif;
             font-size: 24px;
             font-weight: 700;
             color: #f9faf8;
@@ -57,10 +65,63 @@ footer {
                 list-style: none;
 
                 & a {
+    
                     font-size: 18px;
                     color: #e5e7eb;
                     text-decoration: none;
                 }
+            }
+        }
+    }
+
+    & .hero-content {
+        flex: 1;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        & .hero-left { 
+            flex: 1 0 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+
+            & .hero-title {
+                font-size: 48px;
+                font-weight: 900;
+                color: #f9faf8;
+            }
+    
+            & .hero-text {
+                max-width: 85%;
+                font-size: 18px;
+                color: #e5e7eb;
+            }
+    
+            & .hero-btn {
+                width: 100px;
+                height: 30px;
+                background-color: #3882f6;
+                font-size: 18px;
+                font-weight: 700;
+                color: #e5e7eb;
+                border: none;
+                border-radius: 8px;
+            }
+        }
+
+        & .hero-right {
+            flex: 1 0 350px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: grey;
+
+            & p {
+                color: #e5e7eb;
             }
         }
     }
