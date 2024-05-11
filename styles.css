@@ -126,3 +126,54 @@ footer {
         }
     }
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .top-section {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .top-section-title {
+            margin-top: 30px;
+            font-size: 36px;
+            font-weight: 900;
+            color: #1f2937;
+        }
+
+        & .top-section-cards {
+            flex: 1;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .card {
+                width: 150px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                & .card-img {
+                    width: 100%;
+                    height: 130px;
+                    border: 5px solid #3882f6;
+                    border-radius: 8px;
+                }
+
+                & .card-text {
+                    width: 95%;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+    }
+}
