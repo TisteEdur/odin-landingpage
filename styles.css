@@ -35,6 +35,15 @@ footer {
     padding: 0 400px;
 }
 
+button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+}
+
 .header {
     padding-top: 20px;
     height: 400px;
@@ -101,14 +110,8 @@ footer {
             }
     
             & .hero-btn {
-                width: 100px;
-                height: 30px;
                 background-color: #3882f6;
-                font-size: 18px;
-                font-weight: 700;
                 color: #e5e7eb;
-                border: none;
-                border-radius: 8px;
             }
         }
 
@@ -187,11 +190,40 @@ footer {
         & .quote {
             font-size: 36px;
             font-weight: 100;
-        }
+        }  
 
         & .cite {
             align-self: flex-end;
             font-weight: 700;
+        }
+    }
+
+    & .bot-section {
+        padding: 0 100px;
+        justify-content: center;
+
+        & .signup {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #3882f6;
+            border-radius: 5px;
+
+            & .signup-text-container {
+                flex: 0 0 50%;
+
+                & .signup-text,
+                .signup-subtext {
+                    color: #f9faf8;
+                }
+            }
+
+            .signup-btn {
+                background-color: transparent;
+                color: #f9faf8;
+                border: 1px solid #f9faf8;
+            }
         }
     }
 }
